@@ -108,7 +108,7 @@ class DayPicker extends Component {
             });
         } else {
             // right list
-            const times = [].concat(this.state.defalutSTimes).slice(0, index % 24 === 0 ? '24' : index % 24);
+            const times = [].concat(this.state.defalutSTimes).slice(0, index % 24 === 0 ? 24 : index % 24);
             
             this.setState({
                 timeStore: Object.assign(this.state.timeStore, {
@@ -118,6 +118,17 @@ class DayPicker extends Component {
             });
         }
         this.activeTime(this.state.timeStore);
+    }
+
+    clearTime() {
+        this.setState({
+            showTime: '',
+            startTimes: defalutSTimes,
+            endTimes: defalutETimes,
+            timeStore: {},
+            start: undefined,
+            end: undefined
+        });
     }
 
     componentDidMount() {
@@ -174,7 +185,11 @@ class DayPicker extends Component {
                 }}
                 className = "ex-day-picker"
                 />
-                <span className="ex-day-icon" role="img" aria-label="clock">🕒</span>
+                <span className="ex-day-icon" role="img" aria-label="clock"
+                onClick={()=>{
+                    this.clearTime();
+                }}
+                >🕒</span>
             </div>
             
             <div className={this.state.popCss}>
