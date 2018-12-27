@@ -1,5 +1,10 @@
+#root {
+  height: 100%;
+}
+
 .App {
   text-align: center;
+  height: inherit;
 }
 
 .App-logo {
@@ -22,11 +27,45 @@
   color: #61dafb;
 }
 
+.slogan {
+  position: absolute;
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 32px;
+  left: 50%;
+  top: 38%;
+  transform: translateX(-50%);
+  text-shadow: 3px 3px 7px #b3b78b;
+  animation: change-color infinite 20s ease alternate-reverse;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@keyframes change-color {
+  0% {
+    color: #DD6311;
+  }
+  20% {
+    color: #33DD11;
+  }
+  40% {
+    color: #09B9E6;
+  }
+  60% {
+    color: #A311DD;
+  }
+  80% {
+    color: #DD1166;
+  }
+  100% {
+    color: #0A0D11;
   }
 }

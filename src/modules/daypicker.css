@@ -1,0 +1,135 @@
+.ex-day-picker-layout {
+    height: inherit;
+    background: #FFEF09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex-day-picker {
+    width: 250px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    padding: 0 1em;
+    font-size: 18px;
+    transition: box-shadow .2s ease-in;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    color: transparent;
+    text-shadow: 0 0 0 #666;
+}
+
+.ex-day-picker:hover {
+    transition: box-shadow .2s ease-in;
+    box-shadow: 3px 3px 4px 0px #989016;
+}
+
+.ex-day-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ex-day-picker:focus {
+    outline: none;
+    box-shadow: 3px 3px 4px 0px #989016;
+}
+
+.ex-input-area {
+    height: auto;
+    position: relative;
+}
+
+.ex-picker-flex {
+    background: #fff;
+    display: flex;
+    position: relative;
+    width: 288px;
+    margin: 0 auto;
+    height: 200px;
+    border-radius: 15px;
+    transition: box-shadow .2s ease-in;
+    box-shadow: 3px 3px 4px 0px #989016;
+}
+
+.ex-picker-pop {
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.ex-pop-window {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.ex-pop-ul {
+    margin: .5em 0;
+    padding: 0;
+    overflow: scroll;
+}
+
+.ex-pop-ul::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.ex-pop-li {
+    margin: 1rem 0;
+    padding: 0;
+    color: #666;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.ex-pop-li-active span {
+    background-color: #ffef0b;
+    color: #fff;
+}
+
+.ex-pop-li span {
+    transition: background-color .5s ease;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.ex-pop-li span:hover {
+    background-color: #ffef0b;
+    color: #fff;
+}
+
+.ex-pop-line {
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
+
+.showup {
+    display: block;
+    animation: fadeIn .2s linear forwards;
+}
+
+.hidedown {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(0) translateX(-50%);
+    }
+    100% {
+        transform: translateY(3%) translateX(-50%);
+    }
+}

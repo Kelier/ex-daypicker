@@ -6,5 +6,5 @@
 
 #### Preview
 
-(ex-picker)[https://ex-picker.netlify.com/]
+[ex-picker](https://ex-picker.netlify.com/)
 
