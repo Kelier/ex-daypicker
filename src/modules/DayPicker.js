@@ -143,6 +143,9 @@ class DayPicker extends Component {
     }
 
     componentWillUnMount() {
+
+        console.log('you write something shit.💩');
+
         document.body.removeEventListener('click', (e) => {
             this.blurPicker(e);
         });
@@ -153,8 +156,6 @@ class DayPicker extends Component {
     }
 
     render() {
-
-        console.log(this.state.endTimes, 'render');
 
         const startList = this.state.startTimes.map((item, index) => {
             const timeList = index === parseInt(this.state.start) ?  <div className="ex-pop-li ex-pop-li-active" key={index}>
