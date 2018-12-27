@@ -7,10 +7,9 @@
 
 [ex-picker](https://ex-picker.netlify.com/)
 
-[![watch this video](https://mir-s3-cdn-cf.behance.net/project_modules/fs/cdb0ec65059219.5ae769badfeac.png)](https://www.useloom.com/share/b85ba0109fd64d3f93c75d1a3b8afc4f)
 
----
 
+<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.useloom.com/embed/b85ba0109fd64d3f93c75d1a3b8afc4f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 あぃがとうござぃます　for　Netlify's service.
 
