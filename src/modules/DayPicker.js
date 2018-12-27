@@ -144,7 +144,7 @@ class DayPicker extends Component {
 
     componentWillUnMount() {
 
-        console.log('you write something shit.💩');
+        console.log('I wrote some shit.💩 Congratulations!');
 
         document.body.removeEventListener('click', (e) => {
             this.blurPicker(e);
