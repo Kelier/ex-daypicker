@@ -5,5 +5,7 @@
 
 #### Preview
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kelier/ex-daypicker.svg)](https://greenkeeper.io/)
+
 [ex-picker](https://ex-picker.netlify.com/)
 
